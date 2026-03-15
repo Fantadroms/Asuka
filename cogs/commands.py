@@ -18,6 +18,7 @@ class Commands(commands.Cog):
 
         won = int(num) == random.randint(1, 999)
         gif = random.choice(gifs['t' if won else 'f'])
+        print(f'Answer was: {won}')
         await ctx.send(f'https://giphy.com/embed/{gif}')
     
 def setup(asuka):
