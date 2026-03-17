@@ -49,7 +49,7 @@ class Commands(commands.Cog):
         usr_id = ctx.author.id
 
         if usr_id not in usr_data:
-            print('Stupid idiot! Go play my game!')
+            await ctx.send('Stupid idiot! Go play my game!')
             return
 
         await ctx.send(f'Your pity is {usr_data[ctx.author.id]['pity']} and you have {usr_data[ctx.author.id]['wins']} wins.')
